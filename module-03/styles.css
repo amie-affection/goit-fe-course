@@ -99,7 +99,7 @@ margin-right: 0;
 }
 
 .features-list-item:nth-last-child(-n +2) {
-    margin-bottom: 0;
+    margin-bottom: 57px;
 }
 
 .life {
@@ -120,12 +120,20 @@ margin-right: 0;
     margin-bottom: 8px;
 }
 
-.page-footer {
+.button {
+    display: block;
+    margin: 0 auto;
     font-size: 20px;
     line-height: 24px;
     width: 164px;
     height: 60px;
+    font-family: "Playfair display", serif;
+    background-color: transparent;
     border-width: 1px;
     border-color: rgb(98, 98, 98);
-    border-style: solid;   
+    border-style: solid;
+}
+
+.button:hover {
+   background-color: #8cb0ea
 }
