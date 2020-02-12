@@ -1,0 +1,131 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
+
+body {
+    font-family: 'Playfair Display', "Arial", serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.page-header {
+    margin-bottom: 27px;
+}
+
+.site-navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation a {
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 24px;
+    font-size: 14px;
+    color: #626262;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #1cb2ea;
+}
+
+.site-navigation li {
+    display: inline-block;
+    margin-right: 123px;
+    vertical-align: middle;
+    padding: 77px 0;
+}
+ 
+.site-navigation li:last-child {
+margin-right: 0;
+}
+
+.site-navigation li:first-child {
+    margin-left: 165px;
+}
+
+.features-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+ }
+
+ .features {
+     margin-bottom: 57px;
+ }
+
+.features-list-item {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 135px;
+    width: 420px;
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.features-list-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.features-list-item:nth-last-child(-n +2) {
+    margin-bottom: 0;
+}
+
+.life {
+    text-transform: uppercase;
+    color: #b4ad9e;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.features-list-item h3 {
+    font-size: 30px;
+    font-family: 'Playfair Display', "Arial", serif; 
+    color: #626262;
+    line-height: 36px;   
+}
+
+.features-list-item p {
+    margin-bottom: 8px;
+}
+
+.page-footer {
+    font-size: 20px;
+    line-height: 24px;
+    width: 164px;
+    height: 60px;
+    border-width: 1px;
+    border-color: rgb(98, 98, 98);
+    border-style: solid;   
+}
