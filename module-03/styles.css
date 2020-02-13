@@ -34,6 +34,7 @@ body {
     color: #626262;
     font-size: 14px;
     line-height: 24px;
+    margin: 0;
 }
 
 .page-header {
@@ -41,12 +42,14 @@ body {
 }
 
 .site-navigation {
+    text-align: center;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .site-navigation a {
+    display: block;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 24px;
@@ -70,10 +73,6 @@ body {
 margin-right: 0;
 }
 
-.site-navigation li:first-child {
-    margin-left: 165px;
-}
-
 .features-list {
     list-style: none;
     margin: 0;
@@ -82,7 +81,7 @@ margin-right: 0;
  }
 
  .features {
-     margin-bottom: 57px;
+     padding-bottom: 57px;
  }
 
 .features-list-item {
