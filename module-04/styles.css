@@ -7,7 +7,7 @@ html {
 }
 
 .container {
-    width: 1110px;
+    width: 1112px;
     margin: auto;
 }
 
@@ -31,4 +31,106 @@ input[type="radio"].visually-hidden {
 
     body {
         font-family: 'Open Sans', sans-serif;
+        color: #0f0101;
+        font-size: 14px;
+        line-height: 26px;
+        margin: 0;
+    }
+
+    .clearfix::after {
+        display: table;
+        content: "";
+        clear: both;
+    }
+
+    .site-logo {
+        display: inline-block;
+        margin-right: 568px;
+        margin-top: 36px;
+    }
+
+    .page-header {
+          
+    }
+
+    .site-navigation {
+        float: right;
+        width: 464px;
+        margin-top: 10px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .site-navigation a {
+        display: block;
+        color: #0f0101;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 11px;
+    }
+
+    .site-navigation a:hover,
+    .site-navigation a:focus {
+        color: #1abc9c;
+    }
+
+    .site-navigation li {
+        float: left;
+        margin-right: 38px;
+    }
+
+    .featured-list {
+        list-style: none;
+    }
+
+    .menu {
+        color: #515151;
+        font-size: 48px;
+        line-height: 32px;
+    }
+
+    .all-news {
+        list-style: none;
+    }
+
+    .latest-news {
+        color: #515151;
+        font-size: 48px;
+        line-height: 32px;
+    }
+
+    .title-news {
+        font-size: 18px;
+        line-height: 26px;
+        color: #555252;
+    }
+
+    .news {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .title-list {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .price {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .button {
+        display: block;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 26px;
+        width: 160px;
+        height: 51px;
+        font-family: 'Open Sans', sans-serif;
+        color: #ffffff;
+        background-color: #1abc9c;
+        border-style: solid;
+        border-color: #1abc9c;
+        border-width: 1px;
     }
