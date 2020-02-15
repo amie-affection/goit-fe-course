@@ -44,19 +44,19 @@ input[type="radio"].visually-hidden {
     }
 
     .site-logo {
-        display: inline-block;
+    
     }
 
-    .page-header {
-          
+    .page-header container {
+    
     }
 
     .page-nav {
         float: right;
+        margin-top: 8px;
     }
 
     .site-navigation {
-        margin-top: 10px;
         list-style: none;
         margin: 0;
         padding: 0;
@@ -79,6 +79,11 @@ input[type="radio"].visually-hidden {
     .site-navigation li {
         float: left;
         margin-right: 38px;
+    }
+
+    .featured-list {
+        margin: 0;
+
     }
 
     .featured-list li {
@@ -115,8 +120,10 @@ input[type="radio"].visually-hidden {
     }
 
     .product {
-        margin: 0 auto;
-        padding: 0;
+        padding: 0 auto;
+        margin-right: 30px;
+        margin: 0;
+        overflow: hidden;
     }
 
     .title-list {
@@ -133,6 +140,7 @@ input[type="radio"].visually-hidden {
         border-style: solid;
         display: block;
         float: left;
+
     }
 
     .price {
