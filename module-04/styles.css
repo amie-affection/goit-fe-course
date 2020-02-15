@@ -83,7 +83,7 @@ input[type="radio"].visually-hidden {
 
     .featured-list {
         margin: 0;
-
+        display: block;
     }
 
     .featured-list li {
@@ -99,10 +99,6 @@ input[type="radio"].visually-hidden {
         color: #515151;
         font-size: 48px;
         line-height: 32px;
-    }
-
-    .all-news {
-        list-style: none;
     }
 
     .latest-news {
@@ -169,4 +165,19 @@ input[type="radio"].visually-hidden {
         border-style: solid;
         border-color: #1abc9c;
         border-width: 1px;
+    }
+
+    .all-news {
+        list-style: none;
+        float: right;
+        display: block;
+    }
+
+    .all-news li {
+        width: 350px;
+        margin-right: 30px;
+    }
+
+    .all-news li:last-child {
+        margin-right: 0;
     }
