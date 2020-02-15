@@ -84,6 +84,7 @@ input[type="radio"].visually-hidden {
     .featured-list {
         margin: 0;
         display: block;
+        float: right;
     }
 
     .featured-list li {
@@ -122,6 +123,7 @@ input[type="radio"].visually-hidden {
         padding: 0 auto;
         margin-right: 30px;
         margin: 0;
+       
     }
 
     .title-list {
