@@ -89,7 +89,7 @@ input[type="radio"].visually-hidden {
 
     .featured-list li {
         list-style: none;
-        margin: 0;
+        margin-right: 0;
         padding: 0;
         overflow: hidden;
         width: 255px;
