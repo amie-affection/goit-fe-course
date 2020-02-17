@@ -84,10 +84,10 @@ input[type="radio"].visually-hidden {
     .featured-list {
         margin: 0;
         display: block;
-        float: right;
     }
 
     .featured-list li {
+        float:left;
         list-style: none;
         margin-right: 0;
         padding: 0;
@@ -166,8 +166,8 @@ input[type="radio"].visually-hidden {
         border-width: 1px;
         border-color: rgb(50, 50, 50);
         border-style: solid;
-        display: block;
         float: left;
+        display: block;
     }
 
     .price {
@@ -179,6 +179,7 @@ input[type="radio"].visually-hidden {
         height: 40px;
         width: 54px;
         float: left;
+        display:block;
     }
 
     .button {
@@ -198,11 +199,11 @@ input[type="radio"].visually-hidden {
 
     .all-news {
         list-style: none;
-        float: right;
         display: block;
     }
 
     .all-news li {
+        float:left;
         width: 350px;
         margin-right: 30px;
     }
