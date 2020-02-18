@@ -7,7 +7,8 @@ html {
 }
 
 .container {
-    margin: auto;
+    width: 1110px;
+    margin: 0 auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -40,6 +41,11 @@ input[type="radio"].visually-hidden {
         display: table;
         content: "";
         clear: both;
+    }
+
+    .page-header {
+        margin-top: 37px;
+        margin-bottom: 110px;
     }
 
     .page-nav {
@@ -75,6 +81,7 @@ input[type="radio"].visually-hidden {
     .featured-list {
         margin: 0;
         display: block;
+        padding: 0;
     }
 
     .featured-list li {
@@ -103,6 +110,7 @@ input[type="radio"].visually-hidden {
         height: 7px;
         margin: auto;
         background: #1abc9c;
+        margin-bottom: 92px;
     }
 
     .latest-news {
@@ -134,7 +142,7 @@ input[type="radio"].visually-hidden {
 
     .product {
         padding: 0;
-       content: center;
+        margin: 0;
     }
 
     .title-list:hover,
@@ -152,7 +160,6 @@ input[type="radio"].visually-hidden {
         text-transform: uppercase;
         color: #ffffff;
         background-color: rgb(50, 50, 50);
-        margin: 0 auto;
         padding: 0;
         width: 200px;
         height: 40px;
@@ -161,13 +168,14 @@ input[type="radio"].visually-hidden {
         border-style: solid;
         float: left;
         display: block;
+        margin-bottom: 30px;
     }
 
     .price {
         font-family: 'Roboto', sans-serif;
         color: #ffffff;
         background-color: rgb(140, 140, 140);
-        margin: 0;
+        margin-bottom: 30px;
         padding: 0;
         height: 40px;
         width: 54px;
@@ -193,6 +201,7 @@ input[type="radio"].visually-hidden {
     .all-news {
         list-style: none;
         display: block;
+        padding: 0;
     }
 
     .all-news li {
