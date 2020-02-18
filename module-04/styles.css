@@ -98,6 +98,10 @@ input[type="radio"].visually-hidden {
         margin-right: 0;
     }
 
+    .featured-list li:nth-child(n -4) {
+        margin-top: 30px;
+    }
+
     .menu {
         color: #515151;
         font-size: 48px;
@@ -110,7 +114,7 @@ input[type="radio"].visually-hidden {
         height: 7px;
         margin: auto;
         background: #1abc9c;
-        margin-bottom: 92px;
+        margin-bottom: 62px;
     }
 
     .latest-news {
@@ -164,12 +168,9 @@ input[type="radio"].visually-hidden {
         padding: 0;
         width: 200px;
         height: 40px;
-        border-width: 1px;
-        border-color: rgb(50, 50, 50);
-        border-style: solid;
         float: left;
         display: block;
-        margin-bottom: 30px;
+        margin: 0;
         overflow: visible;
     }
 
@@ -177,7 +178,7 @@ input[type="radio"].visually-hidden {
         font-family: 'Roboto', sans-serif;
         color: #ffffff;
         background-color: rgb(140, 140, 140);
-        margin-bottom: 30px;
+        margin: 0;;
         padding: 0;
         height: 40px;
         width: 54px;
