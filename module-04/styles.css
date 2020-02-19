@@ -154,13 +154,6 @@ input[type="radio"].visually-hidden {
     .product {
         padding: 0;
         margin: 0;
-        width: 255px;
-    }
-
-    .bc {
-        background-color: rgb(233, 240, 253);
-        width: 255px;
-        height: 322px;
     }
 
     .title-list:hover,
