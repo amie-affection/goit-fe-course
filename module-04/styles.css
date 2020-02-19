@@ -2,6 +2,12 @@ html {
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 *, *::before, *::after {
     box-sizing: inherit;
 }
@@ -151,14 +157,20 @@ input[type="radio"].visually-hidden {
         width: 255px;
     }
 
+    .bc {
+        background-color: rgb(233, 240, 253);
+        width: 255px;
+        height: 322px;
+    }
+
     .title-list:hover,
     .title-list:focus {
-        color: #1abc9c;
+        background-color: #1abc9c;
     }
 
     .price:hover,
     .price:focus {
-        color: #1abc9c;
+        background-color: rgb(127, 217, 199);
     }
 
     .title-list {
@@ -178,6 +190,7 @@ input[type="radio"].visually-hidden {
     .price {
         font-family: 'Roboto', sans-serif;
         color: #ffffff;
+        font-weight: bold;
         background-color: rgb(140, 140, 140);
         margin: 0;;
         padding: 0;
