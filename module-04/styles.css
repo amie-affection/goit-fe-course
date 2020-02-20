@@ -50,8 +50,24 @@ input[type="radio"].visually-hidden {
     }
 
     .page-header {
-        margin-top: 37px;
-        margin-bottom: 110px;
+        padding-top: 37px;
+        padding-bottom: 104px;
+    }
+
+    .site-logo {
+        text-transform: uppercase;
+        list-style: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        color: #555252;
+        text-decoration: none;
+        line-height: 32px;
+        margin: 0;
+        float: left;
+    }
+
+    .site-logo:first-letter {
+        color: #1abc9c;
     }
 
     .page-nav {
@@ -71,6 +87,7 @@ input[type="radio"].visually-hidden {
         text-transform: uppercase;
         text-decoration: none;
         line-height: 11px;
+        margin-top: 12px;
     }
 
     .site-navigation a:hover,
@@ -81,6 +98,18 @@ input[type="radio"].visually-hidden {
     .site-navigation li {
         float: left;
         margin-right: 38px;
+    }
+
+    .featured {
+        text-transform: uppercase;
+        color: #515151;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .section-title {
+        font-size: 48px;
+        line-height: 32px;
     }
 
     .featured-list {
@@ -105,21 +134,16 @@ input[type="radio"].visually-hidden {
         margin-right: 0;
     }
 
-    .menu {
-        color: #515151;
-        font-size: 48px;
-        font-weight: bold;
-        line-height: 32px;
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-    .wrapper {
+    .section-title::after {
+        display: block;
+        position: center;
+        content: "";
+        height: 6px;
         width: 164px;
-        height: 7px;
-        margin: auto;
         background: #1abc9c;
         margin-bottom: 62px;
+        margin: auto;
+        margin-top: 32px;
     }
 
     .latest-news {
@@ -131,24 +155,46 @@ input[type="radio"].visually-hidden {
         text-transform: uppercase;
     }
 
+    .latest-news::after {
+        display: block;
+        position: center;
+        content: "";
+        height: 6px;
+        width: 164px;
+        background: #1abc9c;
+        margin-bottom: 62px;
+        margin: auto;
+        margin-top: 32px;
+    }
+
+    .img-news {
+        margin-bottom: 15px;
+    }
+
     .title-news {
         font-size: 18px;
         line-height: 26px;
         color: #555252;
+        margin: 0;
     }
 
-    .wrapper2 {
+    .title-news::after {
+        display: block;
+        content: "";
         width: 136px;
         height: 3px;
         margin: auto;
         background: #1abc9c;
-        float: left;
-        margin-bottom: 17px;
+        position: left;
+        margin-top: 15px;
+        margin-bottom: 30px;   
     }
 
     .news {
         font-size: 14px;
         line-height: 26px;
+        margin: 0;
+        margin-bottom: 16px;
     }
 
     .product {
@@ -156,8 +202,8 @@ input[type="radio"].visually-hidden {
         margin: 0;
     }
 
-    .title-list:hover,
-    .title-list:focus {
+    .title-name:hover,
+    .title-name:focus {
         background-color: #1abc9c;
     }
 
@@ -166,7 +212,7 @@ input[type="radio"].visually-hidden {
         background-color: rgb(127, 217, 199);
     }
 
-    .title-list {
+    .title-name {
         font-family: 'Roboto', sans-serif;
         text-transform: uppercase;
         color: #ffffff;
