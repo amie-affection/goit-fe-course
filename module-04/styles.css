@@ -160,6 +160,7 @@ input[type="radio"].visually-hidden {
         text-align: center;
         margin-top: 74px;
         text-transform: uppercase;
+        margin-bottom: 80px;
     }
 
     .latest-news::after {
