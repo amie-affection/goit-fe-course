@@ -112,13 +112,13 @@ input[type="radio"].visually-hidden {
         font-size: 48px;
         line-height: 32px;
         margin: 0;
+        margin-bottom: 92px;
     }
 
     .featured-list {
         margin: 0;
         display: block;
         padding: 0;
-        margin-top: 92px;
     }
 
     .featured-list div {
@@ -135,6 +135,10 @@ input[type="radio"].visually-hidden {
 
     .featured-list li:nth-child(4n) {
         margin-right: 0;
+    }
+
+    .link-product {
+        display: block;
     }
 
     .section-title::after {
@@ -246,7 +250,7 @@ input[type="radio"].visually-hidden {
         text-align: center;
     }
 
-    .button {
+    .link-read {
         display: block;
         font-size: 16px;
         line-height: 51px;
@@ -261,6 +265,10 @@ input[type="radio"].visually-hidden {
         margin: 0;
         text-decoration: none;
         text-align: center;
+    }
+
+    .link-read-more:hover {
+
     }
 
     .all-news {
