@@ -126,15 +126,25 @@ input[type="radio"].visually-hidden {
         bottom: 40px;
     }
 
-    .featured-list li {
+    .product-list-item {
         float:left;
         list-style: none;
         margin-right: 30px;
         padding: 0;
     }
 
-    .featured-list li:nth-child(4n) {
+    .product-list-item:nth-child(4n) {
         margin-right: 0;
+    }
+
+    .product-list-item:hover
+    .title-name {
+        background-color: #1abc9c;;
+    }
+
+    .product-list-item:hover
+    .price {
+    background-color: rgb(127, 217, 199)
     }
 
     .link-product {
@@ -276,6 +286,7 @@ input[type="radio"].visually-hidden {
         list-style: none;
         display: block;
         padding: 0;
+        margin: 0;
     }
 
     .all-news li {
