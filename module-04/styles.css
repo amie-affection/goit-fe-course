@@ -261,7 +261,7 @@ input[type="radio"].visually-hidden {
         text-align: center;
     }
 
-    .link-read {
+    .link-read-more {
         display: block;
         font-size: 16px;
         line-height: 51px;
@@ -272,14 +272,14 @@ input[type="radio"].visually-hidden {
         background-color: #1abc9c;
         border-style: solid;
         border-color: #1abc9c;
-        border-width: 1px;
         margin: 0;
         text-decoration: none;
         text-align: center;
     }
 
     .link-read-more:hover {
-
+        background-color: rgb(127, 217, 199);
+        border-color: rgb(127, 217, 199);
     }
 
     .all-news {
