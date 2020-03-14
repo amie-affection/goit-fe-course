@@ -35,7 +35,7 @@ input[type="radio"].visually-hidden {
     overflow: hidden;
     }
 
-    body {
+body {
         font-family: 'Open Sans', sans-serif;
         color: #0f0101;
         font-size: 14px;
@@ -114,7 +114,6 @@ input[type="radio"].visually-hidden {
     padding: 0;
     display: inline-block;
 }
-
 
 .slider-ctrl {
     display: inline-block;
