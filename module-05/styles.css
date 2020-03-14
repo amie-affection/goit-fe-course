@@ -100,10 +100,21 @@ input[type="radio"].visually-hidden {
     margin-right: 38px;
 }
 
+.site-navigation li:last-child {
+    margin-right: 0;
+}
+
 .slider {
     position: relative;
-    margin-bottom: 100px;
 }
+
+.slides-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
 
 .slider-ctrl {
     display: inline-block;
@@ -120,11 +131,11 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-ctrl-prev {
-    left: 245px;
+    left: 0;
 }
 
 .slider-ctrl-next {
-    right: 245px;
+    right: 0;
 }
 
 .slider-ctrl-prev:hover,
@@ -150,8 +161,7 @@ input[type="radio"].visually-hidden {
     display: inline-block;
     color: #ffffff;
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: 'Roboto', sans-serif; 
 }
 
 .section-title {
@@ -163,12 +173,13 @@ input[type="radio"].visually-hidden {
 
 .section-text {
     font-size: 24px;
-    margin-top: 54px;
     margin: 0;
 }
 
 .new-collection {
     background-color: rgb(233, 240, 253);
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .collection-title {
@@ -217,20 +228,53 @@ input[type="radio"].visually-hidden {
     opacity: 0;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 .overlay-icon {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
-    background-image: url(img/heart.png);
     background-repeat: no-repeat;
     border-style: solid;
     border-width: 1px;
     border-color: #ffffff;
+    margin-right: 9px;
+    background-position: center;
+}
+
+.like {
+    top: 90px;
+    left: 35px;
+    background-image: url(img/heart.png);
+
+}
+
+.change {
+    top: 90px;
+    left: 94px;
+    background-image: url(img/change.png);
+}
+
+.time {
+    top: 90px;
+    left: 150px;
+    background-image: url(img/time.png);
+}
+
+.add {
+    background-color: rgb(50, 50, 50);
+    left: 35px;
+    top: 147px;
+    width: 164px;
+    height: 48px;
+    background-image: url(img/add.png);
+    position: absolute;
+}
+
+.overlay-icon:hover
+.overlay-icon:focus {
+    color: #1abc9c;
 }
 
 .product-list {
@@ -324,7 +368,6 @@ input[type="radio"].visually-hidden {
     text-align: center;
     background-color: rgb(50, 50, 50);
     color: #ffffff;
-    margin-top: 50px;
 }
 
 .colortext {
