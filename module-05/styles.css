@@ -158,17 +158,15 @@ body {
 }
 
 .featured {
-    position: absolute;
-    bottom: 218px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: inline-block;
+    background-color: rgb(233, 240, 253);
     color: #ffffff;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif; 
 }
 
 .section-title {
+    position: absolute;
+    top: 50%;
     font-size: 60px;
     line-height: 82px;
     margin: 0;
@@ -177,6 +175,8 @@ body {
 }
 
 .section-text {
+    position: absolute;
+    top: 80%;
     font-size: 24px;
     margin: 0;
     text-align: center;
@@ -184,7 +184,6 @@ body {
 }
 
 .new-collection {
-    background-color: rgb(233, 240, 253);
     padding-top: 100px;
     padding-bottom: 50px;
 }
