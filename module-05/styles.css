@@ -43,6 +43,11 @@ body {
         margin: 0;
     }
 
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
 .clearfix::after {
         display: table;
         content: "";
@@ -167,12 +172,15 @@ body {
     font-size: 60px;
     line-height: 82px;
     margin: 0;
-    margin-bottom: 36px;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 .section-text {
     font-size: 24px;
     margin: 0;
+    text-align: center;
+    padding: 28px;
 }
 
 .new-collection {

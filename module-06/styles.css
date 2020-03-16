@@ -1,0 +1,102 @@
+html {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
+
+body {
+        font-family: 'Roboto', sans-serif;
+        color: #0f0101;
+        font-size: 15px;
+        line-height: 24px;
+        margin: 0;
+    }
+
+.clearfix::after {
+        display: table;
+        content: "";
+        clear: both;
+    }
+
+.page-header {
+    padding-top: 28px;
+    padding-bottom: 130px;
+}
+
+.site-logo {
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(159, 225, 211);
+    text-decoration: none;
+    line-height: 36px;
+    margin: 0;
+    float: left;
+}
+
+.page-nav {
+    float: right;
+}
+.site-navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation a {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    color: rgb(149, 225, 211);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: rgb(243, 129, 129);
+    text-decoration: underline;
+}
+
+.site-navigation li {
+    float: left;
+    margin-right: 56px;
+}
+
+.site-navigation li:last-child {
+    margin-right: 0;
+}
+
+font-family: 'Kaushan Script', cursive;
