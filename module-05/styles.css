@@ -119,29 +119,27 @@ body {
     padding: 0;
 }
 
+.slider-button {
+    position: absolute;
+}
+
 .slider-ctrl {
-    display: inline-block;
     background-color: rgb(78, 198, 171);
     opacity: 0.651;
-    position: absolute;
     width: 104px;
     height: 104px;
     border: none;
-    top: 50%;
-    transform: translateY(-50%);
     margin: 0;
     padding: 0;
 }
 
 .slider-ctrl-prev {
-    left: 0;
     background-image: url(img/prev.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .slider-ctrl-next {
-    right: 0;
     background-image: url(img/next.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -228,15 +226,27 @@ body {
     bottom: 40px;
 }
 
+.button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+}
+
+.button:last-child {
+    width: 164px;
+    height: 48px;
+}
+
 .overlay { 
     position: absolute;
     border-width: 10px;
     border-color: rgb(255, 255, 255);
     border-style: solid;     
     background-color: rgb(0, 0, 0);
+    opacity: 0;
     width: 255px;
     height: 288px;
-    opacity: 0;
     padding: 0;
     margin: 0;
     list-style: none;
