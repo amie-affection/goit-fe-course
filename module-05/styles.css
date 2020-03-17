@@ -170,21 +170,18 @@ body {
 
 .section-title {
     position: absolute;
-    top: 50%;
+    top: 220px;
     font-size: 60px;
     line-height: 82px;
     margin: 0;
-    margin-bottom: 25px;
-    text-align: center;
+    padding-bottom: 25px;
 }
 
 .section-text {
     position: absolute;
-    top: 80%;
+    top: 300px;
     font-size: 24px;
     margin: 0;
-    text-align: center;
-    padding: 28px;
 }
 
 .featured {
@@ -283,6 +280,7 @@ body {
     width: 164px;
     height: 48px;
     background-image: url(img/add.png);
+    background-repeat: no-repeat;
     position: absolute;
 }
 
@@ -298,8 +296,7 @@ body {
     padding: 0;
 }
 
-:hover
-.overlay {
+.overlay:hover {
     opacity: 0.549;
 }
 
