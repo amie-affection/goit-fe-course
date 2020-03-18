@@ -263,12 +263,13 @@ body {
 }
 
 .overlay-list { 
-
+    width: 166px;
+    height: 108px;
+    font-size: 0;
 }
 
 .overlay-icon {
     display: inline-block;
-    font-size: 0;
     background-repeat: no-repeat;
     margin-right: 8px;
     margin-bottom: 8px;
@@ -283,11 +284,6 @@ body {
     margin-bottom: 0;
 }
 
-.overlay-icon:hover
-.overlay-icon {
-    background-color: #1abc9c;
-}
-
 .like {
     background-image: url(../img/heart.png);
 }
@@ -298,10 +294,6 @@ body {
 
 .time {
     background-image: url(../img/time.png);
-}
-
-.add {
-    background-image: url(../img/add.png);
 }
 
 .img-wrap:hover
@@ -323,13 +315,21 @@ body {
 }
 
 .overlay-icon:last-child .button {
+    background-image: url(../img/add.png);
+    background-repeat: no-repeat;
     background-color: rgb(50, 50, 50);
     width: 166px;
     height: 50px;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     color: #fff;
-    padding-left: 20px;
+    line-height: 50px;
+    
+}
+
+.button:hover {
+    background-color: #1abc9c;
+    border-color: #1abc9c;
 }
 
 .product-list:hover
