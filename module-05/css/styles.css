@@ -399,7 +399,9 @@ body {
     color: #ffffff;
 }
 
-.colortext {
+.copyright {
     color: rgb(70, 191, 169);
     line-height: 88px;
+    list-style: none;
+    text-decoration: none;
 }
