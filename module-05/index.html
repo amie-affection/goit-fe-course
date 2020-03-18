@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <title>Module-05</title>
@@ -26,19 +26,22 @@
 
     <main>
         <section class="slider">
+
+            <div class="slider-button container">
+                <button class="slider-ctrl slider-ctrl-prev"></button>
+                <button class="slider-ctrl slider-ctrl-next"></button>
+            </div>
+
             <ul class="slides-list">
                 <li class="preview">
-                    <img class="preview" src="img/slide.png" alt="girls" width="1600" height="600">
-                    <div class="slider-button container">
-                        <button class="slider-ctrl slider-ctrl-prev"></button>
-                        <button class="slider-ctrl slider-ctrl-next"></button>
+                    <img class="preview" src="/img/slide.png" alt="girls" width="1600" height="600">
+                    <div class="collection container">
+                        <h2 class="section-title">Affordable Paris Tours</h2>
+                        <p class="section-text">City tours / Tour tickets / Tour guides</p>
                     </div>
                 </li>
             </ul>
-            <div class="collection container">
-                <h2 class="section-title">Affordable Paris Tours</h2>
-                <p class="section-text">City tours / Tour tickets / Tour guides</p>
-            </div>
+
         </section>
 
     <section class="featured">    
@@ -46,71 +49,75 @@
                 <h2 class="collection-title">New collection</h2>
                 <ul class="pictures-list clearfix">
                     <li class="product-list">
-                        <ul class="overlay">
-                            <li class="overlay-icon like"><button class="button"></button></li>
-                            <li class="overlay-icon change"><button class="button"></button></li>
-                            <li class="overlay-icon time"><button class="button"></button></li>
-                            <li class="overlay-icon add"><button class="button">Add to cart</button></li>
-                        </ul>
-
-                        <a class="link-product" href="#">
-                            <img class="img-collection" src="img/blue shirt.png" alt="blue shirt" width="255" height="320">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                            <ul class="overlay-list">
+                                <li class="overlay-icon like"><button class="button"></button></li>
+                                <li class="overlay-icon change"><button class="button"></button></li>
+                                <li class="overlay-icon time"><button class="button"></button></li>
+                                <li class="overlay-icon add"><button class="button">Add to cart</button></li>
+                            </ul>
+                            </div>
+                        <img class="img-collection" src="/img/blue-shirt.jpg" alt="blue shirt" width="255" height="284">
+                        </div>    
                             <div class="bottom clearfix">
-                                <h3 class="title-name">Blue tshirt</h3>
+                                <h3 class="title-name"><a class="link-product" href="#">Blue tshirt</a></h3>
                                 <p class="price">$26</p>
                             </div>
-                        </a>
                     </li>
 
                     <li class="product-list">
-                        <ul class="overlay">
-                            <li class="overlay-icon like"><button class="button"></button></li>
-                            <li class="overlay-icon change"><button class="button"></button></li>
-                            <li class="overlay-icon time"><button class="button"></button></li>
-                            <li class="overlay-icon add"><button class="button">Add to cart</button></li>
-                        </ul>
-
-                        <a class="link-product" href="#">
-                            <img class="img-collection" src="img/dress.png" alt="dress" width="255" height="320">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                            <ul class="overlay-list">
+                                <li class="overlay-icon like"><button class="button"></button></li>
+                                <li class="overlay-icon change"><button class="button"></button></li>
+                                <li class="overlay-icon time"><button class="button"></button></li>
+                                <li class="overlay-icon add"><button class="button">Add to cart</button></li>
+                            </ul>
+                            </div>
+                        <img class="img-collection" src="/img/dress.jpg" alt="dress" width="255" height="284">
+                        </div>
                             <div class="bottom clearfix">
-                                <h3 class="title-name">Woman shirt</h3>
+                                <h3 class="title-name"><a class="link-product" href="#">Woman shirt</a></h3>
                                 <p class="price">$31</p>
                             </div>
-                        </a>
                     </li>
 
                     <li class="product-list">
-                        <ul class="overlay">
-                            <li class="overlay-icon like"><button class="button"></button></li>
-                            <li class="overlay-icon change"><button class="button"></button></li>
-                            <li class="overlay-icon time"><button class="button"></button></li>
-                            <li class="overlay-icon add"><button class="button">Add to cart</button></li>
-                        </ul>
-
-                        <a class="link-product" href="#">
-                            <img class="img-collection" src="img/yellow shirt.png" alt="yellow shirt" width="255" height="320">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                            <ul class="overlay-list">
+                                <li class="overlay-icon like"><button class="button"></button></li>
+                                <li class="overlay-icon change"><button class="button"></button></li>
+                                <li class="overlay-icon time"><button class="button"></button></li>
+                                <li class="overlay-icon add"><button class="button">Add to cart</button></li>
+                            </ul>
+                            </div>
+                        <img class="img-collection" src="/img/yellow-shirt.jpg" alt="yellow shirt" width="255" height="284"
+                        </div>
                             <div class="bottom clearfix">
-                                <h3 class="title-name">Yellow tshirt</h3>
+                                <h3 class="title-name"><a class="link-product" href="#">Yellow tshirt</a></h3>
                                 <p class="price">$31</p>
                             </div>
-                        </a>
                     </li>
 
                     <li class="product-list">
-                        <ul class="overlay">
-                            <li class="overlay-icon like"><button class="button"></button></li>
-                            <li class="overlay-icon change"><button class="button"></button></li>
-                            <li class="overlay-icon time"><button class="button"></button></li>
-                            <li class="overlay-icon add"><button class="button">Add to cart</button></li>
-                        </ul>
-
-                        <a class="link-product" href="#">
-                            <img class="img-collection" src="img/cool lingerie.png" alt="lingerie" width="255" height="320">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                            <ul class="overlay-list">
+                                <li class="overlay-icon like"><button class="button"></button></li>
+                                <li class="overlay-icon change"><button class="button"></button></li>
+                                <li class="overlay-icon time"><button class="button"></button></li>
+                                <li class="overlay-icon add"><button class="button">Add to cart</button></li>
+                            </ul>
+                            </div>
+                        <img class="img-collection" src="/img/cool-lingerie.jpg" alt="lingerie" width="255" height="284">
+                        </div>
                             <div class="bottom clearfix">
-                                <h3 class="title-name">Cool lingerie</h3>
+                                <h3 class="title-name"><a class="link-product" href="#">Cool lingerie</a></h3>
                                 <p class="price">$56</p>
                             </div>
-                        </a>
                     </li>
                 </ul>
             </div>
