@@ -139,7 +139,7 @@ body {
 }
 
 .slider-ctrl-prev {
-    background-image: url(/img/prev.png);
+    background-image: url(../img/prev.png);
     background-repeat: no-repeat;
     background-position: center;
     float: left;
@@ -147,7 +147,7 @@ body {
 
 .slider-ctrl-next {
     float: right;
-    background-image: url(/img/next.png);
+    background-image: url(../img/next.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -299,19 +299,19 @@ body {
 }
 
 .like {
-    background-image: url(/img/heart.png);
+    background-image: url(../img/heart.png);
 }
 
 .change {
-    background-image: url(/img/change.png);
+    background-image: url(..img/change.png);
 }
 
 .time {
-    background-image: url(/img/time.png);
+    background-image: url(../img/time.png);
 }
 
 .add {
-    background-image: url(/img/add.png);
+    background-image: url(../img/add.png);
 }
 
 .overlay-list:hover {
