@@ -365,11 +365,15 @@ body {
     background-color: rgb(127, 217, 199);
 }
 
+.bottom {
+    background-color: rgb(50, 50, 50);
+    display: inline-block;
+}
+
 .title-name {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     color: #ffffff;
-    background-color: rgb(50, 50, 50);
     padding: 0;
     padding-left: 12px;
     text-align: left;
@@ -384,9 +388,9 @@ body {
 
 .price {
     font-family: 'Roboto', sans-serif;
+    background-color: rgba(255, 255, 255, .44);
     color: #ffffff;
     font-weight: bold;
-    background-color: rgb(140, 140, 140);
     margin: 0 auto;
     padding: 0;
     height: 40px;
@@ -398,13 +402,8 @@ body {
 }
 
 .product-list:hover
-.title-name {
-    background-color: #1abc9c;;
-}
-
-.product-list:hover
-.price {
-    background-color: rgb(127, 217, 199)
+.buttom {
+    background-color: #1abc9c;
 }
 
 .link-product {
