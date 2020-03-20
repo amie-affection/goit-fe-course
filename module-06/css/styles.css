@@ -209,10 +209,20 @@ input[type="radio"].visually-hidden {
     display: inline-block;
     margin: 0;
     font-weight: 200;
-    font-family: var(--font-secondary-color);
+    color: var(--font-secondary-color);
     font-style: italic;
 }
 
 .copyright {
     height: 62px;
+    font-family: var(--secondary-font);
+    color: var(--font-main-color);
+}
+
+.link-copyright {
+    text-decoration: none;
+    list-style: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--secondary-color);
 }
