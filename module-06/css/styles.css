@@ -55,28 +55,27 @@ input[type="radio"].visually-hidden {
 
 .page-header {
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 132px;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 30px;
+    padding-bottom: 132px;
     height: 50px;
 }
 
 .site-logo {
     display: inline-block;
     list-style: none;
-    font-family: var(--main-font);
-    font-weight: bold;
+    font-family: var(--secondary-font);
+    font-weight: 700;
     font-size: 30px;
     color: var(--main-color);
     text-decoration: none;
     line-height: 36px;
 }
 
-.page-nav {
-
-}
 .site-navigation {
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
     min-width: 490px;
     list-style: none;
     margin: 0;
@@ -98,11 +97,6 @@ input[type="radio"].visually-hidden {
 .site-navigation a:hover,
 .site-navigation a:focus {
     color: var(--secondary-color);
-
-}
-
-.site-navigation li {
-
 }
 
 .general-title {
@@ -131,6 +125,17 @@ input[type="radio"].visually-hidden {
     margin-top: 17px;
 }
 
+.title::after {
+    display: block;
+    content: "";
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 40px;
+    height: 3px;
+    width: 60px;
+    background: var(--secondary-color);
+}
+
 .list-item {
     display: flex;
     list-style: none;
@@ -142,6 +147,15 @@ input[type="radio"].visually-hidden {
 .services-item {
     width: 380px;
     margin-bottom: 94px;
+    margin-right: 20px;
+}
+
+.services-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.general-services {
+    padding-left: 80px;
 }
 
 .title-service {
