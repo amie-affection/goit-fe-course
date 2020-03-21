@@ -85,18 +85,34 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation a {
+    position: relative;
     font-family: var(--secondary-font);
     display: block;
     color: var(--main-color);
     text-transform: uppercase;
     text-decoration: none;
-    position: relative;
     transition: color 200ms linear;
+}
+
+.site-navigation a::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: var(--secondary-color);
+    margin-top: 10px;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus {
     color: var(--secondary-color);
+    
+}
+
+.site-navigation a:hover
+.site-navigation a::after {
+
 }
 
 .general-title {
@@ -138,6 +154,10 @@ input[type="radio"].visually-hidden {
 
 .list-item {
     display: flex;
+    justify-content: space-between;
+    flex-basis: 380px;
+    flex-grow: 0;
+    flex-shrink: 0;
     list-style: none;
     flex-wrap: wrap;
     margin: 0;
@@ -147,11 +167,30 @@ input[type="radio"].visually-hidden {
 .services-item {
     width: 380px;
     margin-bottom: 94px;
-    margin-right: 20px;
 }
 
-.services-item:nth-child(3n) {
-    margin-right: 0;
+.photography::before {
+    background-image: url(../icons/alarm.png);
+}
+
+.web::before {
+    background-image: url(../icons/line-graph.png);
+}
+
+.creativity::before {
+    background-image: url(../icons/computer.png);
+}
+
+.seo::before {
+    background-image: url(../icons/book.png);
+}
+
+.css-html::before {
+    background-image: url(../icons/home.png);
+}
+
+.digital::before {
+    background-image: url(../icons/image.png);
 }
 
 .general-services {
@@ -173,6 +212,10 @@ input[type="radio"].visually-hidden {
     margin: 0;
 }
 
+.team-section {
+    margin-bottom: 84px;
+}
+
 .our-team {
     margin-bottom: 86px;
 }
@@ -188,11 +231,9 @@ input[type="radio"].visually-hidden {
 .team-list {
     list-style: none;
     display: flex;
-    margin-bottom: 84px;
-}
-
-.team-members {
-    margin-right: 30px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
 
 .img-wrap {
@@ -207,9 +248,13 @@ input[type="radio"].visually-hidden {
     height: 100%;
     display: flex;
     justify-content: center;
-    visibility: hidden;
+    opacity: 0;
     transition: opacity 200ms linear;
     background-image: linear-gradient(rgba(243, 129, 129, 0.9) 0%, rgba(252, 227, 138, 0.9) 100%);
+}
+
+.social-overlay:hover {
+    opacity: 1;
 }
 
 .team-members:last-child {
@@ -255,6 +300,10 @@ input[type="radio"].visually-hidden {
     transition: background-color 200ms linear;
     border: 1px solid var(--secondary-color);
     margin: 0;
+}
+
+.link-icon:hover {
+    background-color: var(--main-color);
 }
 
 .member-photo {
