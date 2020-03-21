@@ -59,7 +59,6 @@ input[type="radio"].visually-hidden {
     align-items: baseline;
     padding-top: 30px;
     padding-bottom: 132px;
-    height: 50px;
 }
 
 .site-logo {
@@ -250,6 +249,14 @@ input[type="radio"].visually-hidden {
     margin: 0;
 }
 
+.team-members {
+    width: 380px;
+}
+
+.team-members:last-child {
+    margin-right: 0;
+}
+
 .img-wrap {
     position: relative;
     transition: all 200ms linear 0s;
@@ -278,10 +285,6 @@ input[type="radio"].visually-hidden {
 .social-overlay:hover {
     opacity: 1;
     transform: translate(10, 10);
-}
-
-.team-members:last-child {
-    margin-right: 0;
 }
 
 .facebook {
@@ -323,6 +326,10 @@ input[type="radio"].visually-hidden {
     transition: background-color 200ms linear;
     border: 1px solid var(--secondary-color);
     margin: 0;
+}
+
+.link-icon:last-child {
+    border-right: none;
 }
 
 .link-icon:hover {
