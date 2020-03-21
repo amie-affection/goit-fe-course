@@ -238,6 +238,7 @@ input[type="radio"].visually-hidden {
 
 .img-wrap {
     position: relative;
+    transition: all 200ms linear 0s;
 }
 
 .social-overlay {
@@ -335,6 +336,8 @@ input[type="radio"].visually-hidden {
 }
 
 .copyright {
+    display: flex;
+    justify-content: space-between;
     height: 62px;
     font-family: var(--secondary-font);
     color: var(--font-main-color);
@@ -346,4 +349,37 @@ input[type="radio"].visually-hidden {
     font-size: 14px;
     line-height: 17px;
     color: var(--secondary-color);
+}
+
+.subscribe-form {
+    display: flex;
+}
+
+.email-line {
+    width: 230px;
+    height: 40px;
+    padding-left: 12px;
+    border: 1px solid rgb(231, 231, 231);
+
+}
+
+.button-subscribe {
+    background-color: var(--main-color);
+    font-family: var(--secondary-font);
+    height: 40px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 200ms linear;
+}
+
+.button-subscribe:hover,
+.button-subscribe:focus {
+    background-color: var(--secondary-color);
+    cursor: pointer;
 }
