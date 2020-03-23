@@ -67,11 +67,13 @@
         </div>
 
         <form class="contact-form container">
-            <div class="form-input container">
-                <input name="name" type="text" class="contact-form-input" placeholder="Your name" required minlength="2">
-                <input name="email" type="email" class="contact-form-input" placeholder="Your e-mail" required>
-                <input name="subject" type="text" class="contact-form-input" placeholder="Subject">
-                <textarea name="message" class="contact-form-textarea" placeholder="Your message"></textarea>
+            <div class="form container">
+                <div class="form-input">
+                    <input name="name" type="text" class="contact-form-input" placeholder="Your name *" required minlength="2">
+                    <input name="email" type="email" class="contact-form-input" placeholder="Your e-mail *" required>
+                    <input name="subject" type="text" class="contact-form-input" placeholder="Subject">
+                </div>
+                <textarea name="message" class="contact-form-textarea" placeholder="Your message *"></textarea>
             </div>
                 <button class="button-send">Send message</button>
         </form>
