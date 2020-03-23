@@ -1,3 +1,32 @@
+/* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
 html {
     box-sizing: border-box;
 }
@@ -36,7 +65,7 @@ input[type="radio"].visually-hidden {
     }
 
 :root {
-    --main-font: 'Roboto', sans-serif;
+    --main-font: 'Roboto Slab', serif;
     --secondary-font: 'Montserrat', sans-serif;
     --main-color: rgb(254, 209, 54);
     --font-main-color: #777777;
@@ -54,7 +83,7 @@ body {
     .page-header {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
         padding-top: 50px;
         padding-bottom: 108px;
     }
@@ -104,11 +133,12 @@ body {
         margin: 0;
         text-align: center;
         margin-bottom: 52px;
+        font-family: var(--main-font);
     }
 
     .list-item {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-basis: 290px;
         flex-grow: 0;
         flex-shrink: 0;
@@ -116,31 +146,44 @@ body {
         flex-wrap: wrap;
         margin: 0;
         padding: 0;
-        margin-bottom: 124px;
     }
 
     .service-item {
         position: relative;
-        width: 290px;
+        flex-basis: 290px;
+        text-align: center;
     }
 
     .service-item::before {
-        position: absolute;
-        content: "";
-        display: block;
+        display: flex;
+        justify-content: center;
+        content: url();
         height: 73px;
         width: 74px;
+        border: 3px solid var(--main-color);
+        border-radius: 50%;
         background-repeat: no-repeat;
         background-position: center;
-        margin: 0;
-        background-image: url(../icons/circle.png);
+        margin: 0 auto;
+        padding-top: 14px;
     }
 
+    .e-commerce::before {
+        content: url(../icons/commerce.png);
+    }
+
+    .responsive-web::before {
+        content: url(../icons/web.png);
+    }
+
+    .web-security::before {
+        content: url(../icons/security.png);
+    }
+      
     .general-services {
         display: inline-block;
         height: 232px;
         width: 100%;
-        padding-top: 108px;
     }
 
     .general-services::before {
@@ -152,19 +195,6 @@ body {
         background-repeat: no-repeat;
         background-position: center;
         margin: 0;
-        background-image: url(../icons/circle.png);
-    }
-
-    .e-commerce::before {
-        background-image: url(../icons/commerce.png);
-    }
-
-    .responsive-web::before {
-        background-image: url(../icons/web.png);
-    }
-
-    .web-security::before {
-        background-image: url(../icons/security.png);
     }
 
     .title-service {
@@ -184,7 +214,14 @@ body {
     }
 
     .section-contacts {
-        background-image: url(../img/Background.png);
+        background-color: var(--font-secondary-color);
+        background-image: url(../img/Map.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .contacts-item {
+        padding-top: 92px;
     }
 
     .contacts {
@@ -199,8 +236,62 @@ body {
     }
 
     .contact-form {
-        display: inline-block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-basis: 940px;
     }
+
+    .form-input {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .form-input::placeholder {
+        color: rgb(187, 187, 187);
+        font-weight: 700;
+        font-family: var(--secondary-font);
+    }
+
+    .contact-form-input {
+        width: 455px;
+        height: 50px;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 2px;
+        margin-bottom: 28px;
+        padding-left: 20px;
+    }
+
+    /*.::after {
+        content: "*";
+      }*/
+
+    .contact-form-textarea {
+        width: 455px;
+        min-height: 210px;
+        resize: none;
+        margin-bottom: 20px;
+        padding-top: 18px;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 2px;
+        padding-left: 20px;
+    }
+
+    .contact-form-input::placeholder,
+    .contact-form-textarea::placeholder {
+        text-transform: uppercase;
+    }
+
+    .contact-form-input:required:focus:valid:not(:placeholder-shown) {
+        outline: 1px solid green;
+      }
+      
+      .contact-form-input:required:focus:invalid:not(:placeholder-shown) {
+        outline: 1px solid red;
+      }
 
     .button-send {
         background-color: var(--main-color);
@@ -209,11 +300,11 @@ body {
         line-height: 22px;
         height: 65px;
         width: 240px;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
         border: none;
         text-transform: uppercase;
         color: #fff;
         font-weight: 700;
-
+        cursor: pointer;
     }

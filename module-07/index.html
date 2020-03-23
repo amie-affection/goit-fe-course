@@ -5,18 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:200,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-    <title>Module-07</title>
+  <title>Module-07</title>
 </head>
 
 <body>
     <header class="page-header container">
-        <div class="page-logo">
-            <a class="site-logo" href="#">
+        <a class="site-logo" href="#">
             <img class="logotype" src="./icons/Logo.png" alt="logotype" width="79" height="28">
         </a>
-        </div>
         <nav class="page-nav">
             <ul class="site-navigation">
                 <li><a class="link-navigation" href="">Home</a></li>
@@ -37,24 +33,24 @@
         </div>
 
         <ul class="list-item">
-            <li class="service-item">
-                <div class="general-services e-commerce">
+            <li class="service-item e-commerce">
+                <div class="general-services">
                     <h3 class="title-service">E-Commerce</h3>
                     <p class="description">Proin iaculis purus consequat sem cure 
                         digni ssim. Donec porttitora entum suscipit 
                         aenean rhoncus posuere odio in tincidunt.</p>
                 </div>
             </li>
-            <li class="service-item">
-                <div class="general-services responsive-web">
+            <li class="service-item responsive-web">
+                <div class="general-services">
                     <h3 class="title-service">Responsive Web</h3>
                     <p class="description">Proin iaculis purus consequat sem cure 
                         digni ssim. Donec porttitora entum suscipit 
                         aenean rhoncus posuere odio in tincidunt.</p>
                 </div>
             </li>
-            <li class="service-item">
-                <div class="general-services web-security">
+            <li class="service-item web-security">
+                <div class="general-services">
                     <h3 class="title-service">Web Security</h3>
                     <p class="description">Proin iaculis purus consequat sem cure 
                         digni ssim. Donec porttitora entum suscipit 
@@ -70,8 +66,13 @@
             <p class="services-description">Proin iaculis purus consequat sem cure.</p>
         </div>
 
-        <form class="contact-form">
-            
-            <button class="button-send">Send message</button>
+        <form class="contact-form container">
+            <div class="form-input container">
+                <input name="name" type="text" class="contact-form-input" placeholder="Your name" required minlength="2">
+                <input name="email" type="email" class="contact-form-input" placeholder="Your e-mail" required>
+                <input name="subject" type="text" class="contact-form-input" placeholder="Subject">
+                <textarea name="message" class="contact-form-textarea" placeholder="Your message"></textarea>
+            </div>
+                <button class="button-send">Send message</button>
         </form>
     </section>
