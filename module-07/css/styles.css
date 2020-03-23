@@ -240,22 +240,19 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
         flex-basis: 100%;
+        padding-bottom: 115px;
     }
 
     .form {
         display: flex;
         justify-content: space-between;
-        flex-direction: column;
+        margin-bottom: 30px;
     }
 
     .form-input {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        flex-basis: calc(50% - 15px);
-    }
-
-    .form-input {
         flex-basis: calc(50% - 15px);
     }
 
@@ -274,11 +271,14 @@ body {
         padding-left: 20px;
     }
 
+    .contact-form-input:last-child {
+        margin-bottom: 0;
+    }
+
     .contact-form-textarea {
         width: 455px;
         min-height: 210px;
         resize: none;
-        margin-bottom: 20px;
         padding-top: 18px;
         border: 1px solid rgb(204, 204, 204);
         border-radius: 2px;
