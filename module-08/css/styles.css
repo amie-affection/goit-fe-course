@@ -388,7 +388,7 @@ input[type="radio"].visually-hidden {
 
     }
 
-    @media (min-width: 940px) {
+    @media (min-width: 1000px) {
       .container {
           width: 940px;
       }
