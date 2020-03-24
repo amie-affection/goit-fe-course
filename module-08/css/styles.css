@@ -359,6 +359,22 @@ input[type="radio"].visually-hidden {
         margin-bottom: 60px;
         width: 236px;
       }
+      
+      .tv-li {
+        order: 1;
+      }
+
+      .water-li {
+        order: 3;
+      }
+
+      .coffee-li{
+        order: 2;
+      }
+
+      .telegram-li {
+        order: 4;
+      }
 
       .partners {
         width: 121px;
@@ -422,6 +438,22 @@ input[type="radio"].visually-hidden {
 
       .partners-item {
         width: 220px;
+      }
+
+      .tv-li {
+        order: 1;
+      }
+
+      .water-li {
+        order: 3;
+      }
+
+      .coffee-li{
+        order: 2;
+      }
+
+      .telegram-li {
+        order: 4;
       }
 
       .partners {
