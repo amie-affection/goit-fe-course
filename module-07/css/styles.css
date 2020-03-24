@@ -115,6 +115,10 @@ body {
         color: var(--main-color);
     }
 
+    .services {
+        margin-bottom: 120px;
+    }
+
     .title {
         text-transform: uppercase;
         text-align: center;
@@ -178,12 +182,6 @@ body {
 
     .web-security::before {
         content: url(../icons/security.png);
-    }
-      
-    .general-services {
-        display: inline-block;
-        height: 232px;
-        width: 100%;
     }
 
     .general-services::before {
@@ -250,9 +248,6 @@ body {
     }
 
     .form-input {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         flex-basis: calc(50% - 15px);
     }
 
@@ -269,6 +264,7 @@ body {
         border-radius: 2px;
         margin-bottom: 28px;
         padding-left: 20px;
+        font-family: var(--secondary-font);
     }
 
     .contact-form-input:last-child {
@@ -279,10 +275,10 @@ body {
         width: 455px;
         min-height: 210px;
         resize: none;
-        padding-top: 18px;
+        padding: 18px 20px;
         border: 1px solid rgb(204, 204, 204);
         border-radius: 2px;
-        padding-left: 20px;
+        font-family: var(--secondary-font);
     }
 
     .contact-form-input::placeholder,
