@@ -269,7 +269,22 @@ input[type="radio"].visually-hidden {
   margin-bottom: 40px;
 }
 
+@media (min-width: 320px) {
+  
+  .container {
+    max-width: 320px;
+  }
+
+  .list-partners {
+    width: 320px;
+  }
+}
+
 @media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
 
   .header {
     padding-top: 50px;
@@ -320,6 +335,7 @@ input[type="radio"].visually-hidden {
   .list-partners {
     margin-bottom: 58px;
     text-align: center;
+    width: 768px;
   }
 
   .partners-item {
