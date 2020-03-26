@@ -36,6 +36,7 @@ img {
 ul, ol {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -167,16 +168,22 @@ input[type="radio"].visually-hidden {
 
 .page-partners {
   padding-top: 70px;
+  padding-bottom: 0;
 }
 
 .meet-partners {
   margin-bottom: 17px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 17px;
+  font-family: var(--main-font);
+  font-size: 22px;
 }
 
 .partners-item {
-  width: 200px;
+  width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .partners {
@@ -219,13 +226,47 @@ input[type="radio"].visually-hidden {
   background-color: rgb(78, 115, 219);
 }
 
+.position-img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.name-partner {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--main-color);
+  font-family: var(--main-font);
+  text-align: center;
+  margin-bottom: 19px;
+}
+
 .partner-description {
+  margin: 0;
+  padding: 0 30px;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--font-secondary-color);
+  text-align: center;
+  font-family: var(--secondary-font);
   margin-bottom: 26px;
 }
 
 .link-other {
-  margin-top: 4px;
-  margin-bottom: 58px;
+  display: block;
+  text-align: center;
+  font-family: var(--main-font);
+  color: var(--third-color);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 40px;
+  border-radius: 20px;
+  border: 2px solid var(--third-color);
+  height: 40px;
+  width: 280px;
+  background-color: transparent;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 768px) {
@@ -251,9 +292,11 @@ input[type="radio"].visually-hidden {
   }
 
   .title {
-    margin-bottom: 40px;
     font-size: 52px;
     line-height: 62px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 600px;
   }
 
   .title-description {
@@ -268,9 +311,6 @@ input[type="radio"].visually-hidden {
 
   .page-partners {
     padding-top: 76px;
-    padding-left: 138px;
-    padding-right: 138px;
-    padding-bottom: 40px;
   }
 
   .meet-partners {
@@ -278,16 +318,18 @@ input[type="radio"].visually-hidden {
   }
 
   .list-partners {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin-bottom: 58px;
     text-align: center;
   }
 
   .partners-item {
-    margin-bottom: 60px;
+    margin: 0;
     width: 236px;
+  } 
+
+  .partner-description {
+    padding: 0;
+    margin: 0;
   }
   
   .tv-li {
@@ -315,6 +357,16 @@ input[type="radio"].visually-hidden {
     top: 75%;
     left: 70%;
   }
+
+  .link {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .link-other {
+    margin-top: 40px;
+  }
+
 }
 
 @media (min-width: 1000px) {
@@ -330,7 +382,7 @@ input[type="radio"].visually-hidden {
   .title {
     font-size: 52px;
     line-height: 62px;
-    padding: 0 150px;
+    padding: 0 auto;
     margin-bottom: 38px;
   }
   
@@ -348,9 +400,6 @@ input[type="radio"].visually-hidden {
   }
 
   .list-partners {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
     margin-bottom: 57px;
   }
 
@@ -384,4 +433,8 @@ input[type="radio"].visually-hidden {
     left: 70%;
   }
 
+  .link {
+    width: 100%;
+    text-align: center;
+  }
 }
