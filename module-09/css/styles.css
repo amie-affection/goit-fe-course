@@ -256,6 +256,7 @@ input[type="radio"].visually-hidden {
 .link-other {
   display: block;
   text-align: center;
+  margin: 0 auto;
   font-family: var(--main-font);
   color: var(--third-color);
   text-decoration: none;
