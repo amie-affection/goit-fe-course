@@ -425,7 +425,8 @@ input[type="radio"].visually-hidden {
     line-height: 17px;
     margin: 0;
     margin-bottom: 17px;
-    font-weight: 300;
+    font-weight: bold;
+    color: var(--font-main-color);
 }
 
 .service-description {
@@ -583,10 +584,11 @@ input[type="radio"].visually-hidden {
     font-family: var(--secondary-font);
     font-size: 14px;
     line-height: 17px;
-    font-weight: 300;
+    font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 18px;
     display: block;
+    color: var(--font-main-color);
 }
 
 .member__position {
