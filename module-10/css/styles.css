@@ -548,24 +548,26 @@ input[type="radio"].visually-hidden {
     margin: 0;
 }
 
-.link-icon:hover {
+.link-icon:hover,
+.link-icon:focus {
     background-color: var(--secondary-color);
-}
-
-.overlay-icon__social-svg {
-    fill: var(--secondary-color);
 }
 
 .overlay-icon__social-svg {
     height: 45px;
     width: 45px;
-    fill: var(--secondary-color);
     padding-top: 12px;
     padding-left: 10px;
+    fill: var(--secondary-color);
 }
 
-.overlay-icon__social-svg:hover,
-.overlay-icon__social-svg:focus {
+.link-icon:hover
+.overlay-icon__social-svg {
+    fill: var(--white-color);
+}
+
+.link-icon:focus
+.overlay-icon__social-svg {
     fill: var(--white-color);
 }
 
