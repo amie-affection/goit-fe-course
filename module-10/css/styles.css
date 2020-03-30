@@ -116,6 +116,8 @@ input[type="radio"].visually-hidden {
         margin: 0;
     }
 
+/*HEADER*/
+
 .page-header {
     padding-top: 34px;
     padding-bottom: 228px;
@@ -207,40 +209,40 @@ input[type="radio"].visually-hidden {
     transition: width 200ms linear;
 }
 
-.button-header {
+.button-wrapper {
     display: inline-block;
 }
 
-.button-header-item {
+.button-wrapper__item {
     background-color: transparent;
     border: none;
     height: 32px;
     cursor: pointer;
 }
 
-.button-header-item-cart {
+.button-wrapper__item-cart {
     width: 40px;
     margin-right: 35px;    
 }
 
-.button-header-item-search {
+.button-wrapper__item-search {
     width: 32px;
 }
 
-.button-icon-item {
+.button__icon__item {
     fill: var(--white-color);
     height: 20px;
     width: 20px;
 }
 
-.button-icon-item:hover,
-.button-icon-item:focus {
+.button__icon__item:hover,
+.button__icon__item:focus {
     fill: #fce38a;
     height: 30px;
     width: 30px;
 }
 
-.span-title-header {
+.span__title-header {
     font-family: var(--third-font);
     font-size: 72px;
     line-height: 86px;
@@ -249,7 +251,7 @@ input[type="radio"].visually-hidden {
     margin-bottom: 44px;
 }
 
-.title--header {
+.title__header {
     text-transform: uppercase;
     font-family: var(--secondary-font);
     font-size: 150px;
@@ -260,7 +262,7 @@ input[type="radio"].visually-hidden {
     padding: 0 190px;
 }
 
-.learn-more--link {
+.learn-more__link {
     display: block;
     text-transform: uppercase;
     color: var(--white-color);
@@ -275,8 +277,14 @@ input[type="radio"].visually-hidden {
     height: 44px;
 } 
 
+/*SERVICES*/
+
 .services {
     padding-top: 50px;
+}
+
+.services-title {
+    margin-bottom: 66px;
 }
 
 .general-title {
@@ -286,11 +294,7 @@ input[type="radio"].visually-hidden {
     font-family: var(--secondary-font);
 }
 
-.services-title {
-    margin-bottom: 66px;
-}
-
-.span-title {
+.span__title {
     font-family: var(--third-font);
     font-size: 24px;
     line-height: 29px;
@@ -315,7 +319,7 @@ input[type="radio"].visually-hidden {
     background: var(--secondary-color);
 }
 
-.list-item {
+.services__list-item {
     display: flex;
     justify-content: space-around;
     flex-basis: 380px;
@@ -331,6 +335,7 @@ input[type="radio"].visually-hidden {
     position: relative;
     width: 380px;
     margin-bottom: 94px;
+    padding-left: 80px;
 }
 
 .general-services::before {
@@ -370,10 +375,6 @@ input[type="radio"].visually-hidden {
     background-image: url(../icons/IMAGE.svg);
 }
 
-.general-services {
-    padding-left: 80px;
-}
-
 .title-service {
     font-family: var(--secondary-font);
     text-transform: uppercase;
@@ -389,15 +390,15 @@ input[type="radio"].visually-hidden {
     margin: 0;
 }
 
-.team-section {
+.team__section {
     margin-bottom: 84px;
 }
 
-.our-team {
+.our_team__item {
     margin-bottom: 50px;
 }
 
-.team-description {
+.team__description {
     color: var(--font-secondary-color);  
     margin: 0 auto;
     width: 980px;
@@ -405,7 +406,7 @@ input[type="radio"].visually-hidden {
     margin-bottom: 85px;
 }
 
-.team-list {
+.team__list {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -413,11 +414,11 @@ input[type="radio"].visually-hidden {
     margin: 0;
 }
 
-.team-members {
+.team__members {
     width: 380px;
 }
 
-.team-members:last-child {
+.team__members:last-child {
     margin-right: 0;
 }
 
@@ -426,7 +427,7 @@ input[type="radio"].visually-hidden {
     transition: all 200ms linear 0s;
 }
 
-.team-members:hover
+.team__members:hover
 .img-wrap {
     transform: translate(-10px, -10px);
     box-shadow: 10px 10px var(--main-color);
@@ -464,10 +465,6 @@ input[type="radio"].visually-hidden {
     opacity: 1;
 }
 
-.overlay-icon--social-svg {
-    fill: var(--secondary-color);
-}
-
 .link-icon {
     display: block;
     height: 56px;
@@ -483,39 +480,40 @@ input[type="radio"].visually-hidden {
     background-color: var(--secondary-color);
 }
 
-.overlay-icon--social-svg {
+.overlay-icon__social-svg {
+    fill: var(--secondary-color);
+}
+
+.overlay-icon__social-svg {
     height: 36px;
     width: 36px;
     fill: var(--secondary-color);
 }
 
-.overlay-icon--social-svg:hover,
-.overlay-icon--social-svg:focus {
+.overlay-icon__social-svg:hover,
+.overlay-icon__social-svg:focus {
     fill: var(--white-color);
 }
 
-.member-photo {
+.member__photo {
     margin-bottom: 30px;
 }
 
-.member-name {
+.description__photo {
+    text-align: center;
+}
+
+.member__name {
     font-family: var(--secondary-font);
     font-size: 14px;
     line-height: 17px;
     font-weight: 300;
     text-transform: uppercase;
-}
-
-.description-photo {
-    text-align: center;
-}
-
-.member-name {
     margin-bottom: 18px;
     display: block;
 }
 
-.member-position {
+.member__position {
     display: inline-block;
     margin: 0;
     font-weight: 200;
@@ -523,7 +521,9 @@ input[type="radio"].visually-hidden {
     font-style: italic;
 }
 
-.copyright {
+/*FOOTER*/
+
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -533,7 +533,7 @@ input[type="radio"].visually-hidden {
     border-top: 1px solid #e5e5e5;
 }
 
-.link-copyright {
+.footer__link-copyright-text {
     display: inline-block;
     text-decoration: none;
     list-style: none;
@@ -542,11 +542,11 @@ input[type="radio"].visually-hidden {
     color: var(--secondary-color);
 }
 
-.subscribe-form {
+.footer__subscribe-form {
     display: flex;
 }
 
-.email-line {
+.form__email-line {
     width: 230px;
     height: 40px;
     padding-left: 12px;
@@ -554,14 +554,14 @@ input[type="radio"].visually-hidden {
 
 }
 
-.email-line::placeholder {
+.form__email-line::placeholder {
     font-family: var(--main-font);
     color: #cccccc;
     font-style: italic;
     font-weight: 300;
 }
 
-.button-subscribe {
+.form__button-subscribe {
     background-color: var(--main-color);
     font-family: var(--secondary-font);
     height: 40px;
@@ -577,8 +577,8 @@ input[type="radio"].visually-hidden {
     margin-left: -2px;
 }
 
-.button-subscribe:hover,
-.button-subscribe:focus {
+.form__button-subscribe:hover,
+.form__button-subscribe:focus {
     background-color: var(--secondary-color);
     cursor: pointer;
 }
