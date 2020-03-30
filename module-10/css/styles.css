@@ -127,13 +127,19 @@ input[type="radio"].visually-hidden {
     color: var(--white-color);
 }
 
+.page-nav {
+    display: flex;
+    align-items: baseline;
+}
+
 .page-header-nav {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     font-family: var(--secondary-font);
+    height: 30px;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 20px;
     margin-bottom: 172px;
 }
 
@@ -164,6 +170,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     font-size: 14px;
     line-height: 17px;
+    margin-right: 54px;
 }
 
 .site-navigation a {
@@ -188,7 +195,9 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:focus,
+.button-header-item:hover,
+..button-header-item:focus {
     color: #fce38a;
 }
 
@@ -196,6 +205,10 @@ input[type="radio"].visually-hidden {
 .site-navigation a:focus::after {
     opacity: 1;
     transition: width 200ms linear;
+}
+
+.button-header {
+    display: inline-block;
 }
 
 .button-header-item {
@@ -207,6 +220,7 @@ input[type="radio"].visually-hidden {
 
 .button-header-item-cart {
     width: 40px;
+    margin-right: 35px;    
 }
 
 .button-header-item-search {
@@ -215,6 +229,15 @@ input[type="radio"].visually-hidden {
 
 .button-icon-item {
     fill: var(--white-color);
+    height: 20px;
+    width: 20px;
+}
+
+.button-icon-item:hover,
+.button-icon-item:focus {
+    fill: #fce38a;
+    height: 30px;
+    width: 30px;
 }
 
 .span-title-header {
@@ -252,7 +275,7 @@ input[type="radio"].visually-hidden {
     height: 44px;
 } 
 
-.amazing-services {
+.services {
     padding-top: 50px;
 }
 
@@ -263,7 +286,7 @@ input[type="radio"].visually-hidden {
     font-family: var(--secondary-font);
 }
 
-.work-with {
+.services-title {
     margin-bottom: 66px;
 }
 
