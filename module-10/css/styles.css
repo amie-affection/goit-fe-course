@@ -198,8 +198,8 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a:hover,
 .site-navigation a:focus,
-.button-header-item:hover,
-..button-header-item:focus {
+.button__icon__item:hover,
+.button__icon__item:focus {
     color: #fce38a;
 }
 
