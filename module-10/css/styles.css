@@ -483,6 +483,17 @@ input[type="radio"].visually-hidden {
     background-color: var(--secondary-color);
 }
 
+.overlay-icon--social-svg {
+    height: 36px;
+    width: 36px;
+    fill: var(--secondary-color);
+}
+
+.overlay-icon--social-svg:hover,
+.overlay-icon--social-svg:focus {
+    fill: var(--white-color);
+}
+
 .member-photo {
     margin-bottom: 30px;
 }
