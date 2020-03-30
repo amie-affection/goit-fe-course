@@ -198,6 +198,25 @@ input[type="radio"].visually-hidden {
     transition: width 200ms linear;
 }
 
+.button-header-item {
+    background-color: transparent;
+    border: none;
+    height: 32px;
+    cursor: pointer;
+}
+
+.button-header-item-cart {
+    width: 40px;
+}
+
+.button-header-item-search {
+    width: 32px;
+}
+
+.button-icon-item {
+    fill: var(--white-color);
+}
+
 .span-title-header {
     font-family: var(--third-font);
     font-size: 72px;
