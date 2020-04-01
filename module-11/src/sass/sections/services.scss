@@ -1,0 +1,119 @@
+.services {
+    padding-top: 50px;
+
+    &-title {
+        margin-bottom: 66px;
+    }
+
+    &__list-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -ms-flex-preferred-size: 380px;
+            flex-basis: 380px;
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        list-style: none;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    &-item {
+        position: relative;
+        width: 380px;
+        margin-bottom: 94px;
+        padding-left: 80px;
+    }
+}
+
+.general-title {
+    color: $font-main-color;
+    text-align: center;
+    margin: 0;
+    font-family: $secondary-font;
+}
+
+.span__title {
+    font-family: $third-font;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    display: block;
+    margin-top: 17px;
+
+    &-service {
+        font-family: $secondary-font;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 17px;
+        margin: 0;
+        margin-bottom: 17px;
+        font-weight: bold;
+        color: $font-main-color;
+    }
+}
+
+.title::after {
+    display: block;
+    content: "";
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 40px;
+    height: 3px;
+    width: 60px;
+    background: $secondary-color;
+}
+
+.general-services::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    height: 32px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+.photography::before {
+    background-image: url(../images/icons/ALARM.svg);
+}
+
+.web::before {
+    background-image: url(../images/icons/LINE-GRAPH.svg);
+}
+
+.creativity::before {
+    background-image: url(../images/icons/COMPUTER.svg);
+}
+
+.seo::before {
+    background-image: url(../images/icons/BOOK.svg);
+}
+
+.css-html::before {
+    background-image: url(../images/icons/HOME.svg);
+}
+
+.digital::before {
+    background-image: url(../images/icons/IMAGE.svg);
+}
+
+.service-description {
+    color: $font-secondary-color;
+    margin: 0;
+}

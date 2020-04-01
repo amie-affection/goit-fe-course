@@ -1,0 +1,96 @@
+.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 62px;
+    font-family: $secondary-font;
+    color: $font-main-color;
+    border-top: 1px solid #e5e5e5;
+
+    &__link-copyright-text {
+        display: inline-block;
+        text-decoration: none;
+        list-style: none;
+        font-size: 14px;
+        line-height: 17px;
+        color: $secondary-color;
+    }
+
+    &__subscribe-form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+.form__email-line {
+    width: 230px;
+    height: 40px;
+    padding-left: 12px;
+    border: 1px solid rgb(231, 231, 231);
+
+    &::-webkit-input-placeholder {
+        font-family: $main-font;
+        color: #cccccc;
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    &::-moz-placeholder {
+        font-family: $main-font;
+        color: #cccccc;
+        font-style: italic;
+        font-weight: 300;
+    }
+    
+    &:-ms-input-placeholder {
+        font-family: $main-font;
+        color: #cccccc;
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    &::-ms-input-placeholder {
+        font-family: $main-font;
+        color: #cccccc;
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    &::placeholder {
+        font-family: $main-font;
+        color: #cccccc;
+        font-style: italic;
+        font-weight: 300;
+    }
+}
+
+.form__button-subscribe {
+    background-color: $main-color;
+    font-family: $secondary-font;
+    height: 40px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    -webkit-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+    margin-left: -2px;
+
+    &:hover,
+    :focus {
+        background-color: $secondary-color;
+        cursor: pointer;
+    }
+}

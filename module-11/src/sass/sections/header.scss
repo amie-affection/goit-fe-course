@@ -1,0 +1,187 @@
+.page-header {
+    padding-top: 34px;
+    padding-bottom: 228px;
+    background-size: cover;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))),
+    url(../images/bg.jpg);
+    background-image: -o-linear-gradient(rgba(243, 129, 129, 0.9) 0%, rgba(252, 227, 138, 0.9) 100%),
+    url(../images/bg.jpg);
+    background-image: linear-gradient(rgba(243, 129, 129, 0.9) 0%, rgba(252, 227, 138, 0.9) 100%),
+    url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $white-color;
+
+    &-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline;
+        font-family: $secondary-font;
+        height: 30px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 172px;
+    }
+}
+
+.page-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+    .page-header {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))),
+        url(../images/bg@2x.jpg);
+        background-image: -o-linear-gradient(rgba(243, 129, 129, 0.9) 0%, rgba(252, 227, 138, 0.9) 100%),
+        url(../images/bg@2x.jpg);
+        background-image: linear-gradient(rgba(243, 129, 129, 0.9) 0%, rgba(252, 227, 138, 0.9) 100%),
+        url(../images/bg@2x.jpg);
+    }
+}
+
+.site-logo {
+    display: inline-block;
+    list-style: none;
+    font-family: $secondary-font;
+    color: $white-color;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    line-height: 36px;
+}
+
+.site-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-width: 490px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 54px;
+}
+
+.site-navigation a {
+    position: relative;
+    font-family: $secondary-font;
+    display: block;
+    text-transform: uppercase;
+    color: $white-color;
+    text-decoration: none;
+    -webkit-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
+    transition: color 200ms linear;
+}
+
+.site-navigation a::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: #fce38a;
+    margin-top: 10px;
+    opacity: 0;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #fce38a;
+}
+
+.site-navigation a:hover::after,
+.site-navigation a:focus::after {
+    opacity: 1;
+    -webkit-transition: width 200ms linear;
+    -o-transition: width 200ms linear;
+    transition: width 200ms linear;
+}
+
+.button-wrapper {
+    display: inline-block;
+
+    &__item {
+        background-color: transparent;
+        border: none;
+        height: 32px;
+        cursor: pointer;
+
+        &-cart {
+            width: 40px;
+            margin-right: 35px;    
+        }
+
+        &-search {
+            width: 32px;
+        }
+    }
+}
+
+.button__icon__item {
+    fill: $white-color;
+    height: 20px;
+    width: 20px;
+
+    &:hover,
+    :focus {
+        fill: #fce38a;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.span__title-header {
+    font-family: $third-font;
+    font-size: 72px;
+    line-height: 86px;
+    display: block;
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.title__header {
+    text-transform: uppercase;
+    font-family: $secondary-font;
+    font-size: 150px;
+    line-height: 180px;
+    margin-bottom: 108px;
+    display: block;
+    text-align: center;
+    padding: 0 190px;
+}
+
+.learn-more__link {
+    display: block;
+    text-transform: uppercase;
+    color: $white-color;
+    font-family: $secondary-font;
+    font-size: 14px;
+    line-height: 44px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    border: 3px solid $white-color;
+    width: 164px;
+    height: 44px;
+
+    &:hover {
+        background-color: #fce38a;
+        border: none;
+    }
+} 
